@@ -78,7 +78,7 @@
 .home__img-wrapper {
     position: absolute; 
     top: 0;
-    right: 12px;
+    right: -300px;
     transform: translateY(-9%);
     width: 100%;
     max-width: 680px;
@@ -89,7 +89,7 @@
     padding-bottom: 100%;
     border-radius: 50%;
     position: relative;
-    z-index: 1;
+    
 }
 
 .home__profile {
@@ -114,10 +114,10 @@
 
 .shape__2 {
     bottom: 8%;
-    left: -16%;
+    left: -5%;
 }
 
 .shape__3 {
     bottom: 0;
-    right: -2%;
+    right: 0;
 }

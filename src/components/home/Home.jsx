@@ -1,11 +1,13 @@
 import React from 'react'
-import ProfileImg from "../../assets/profile-Img.png"
+import ProfileImg from "../../assets/Chev.png"
+import zeldaFairies from "../../assets/zelda-fairies-1.png"
 import shapeOne from "../../assets/shape-1.png"
 import shapeTwo from "../../assets/shape-2.png"
 
 import { RxGithubLogo, RxLinkedinLogo } from "react-icons/rx";
 import { BsDiscord } from "react-icons/bs";
 import  "./home.css";
+import CV from "../../assets/Josias_Chevalier_Resume.pdf"
 
 const Home = () => {
   return <section className='home' id='home'>
@@ -25,9 +27,9 @@ const Home = () => {
                 <img src={ProfileImg} alt="" className='home__profile' />
             </div>
 
-            <img src="" alt={shapeOne} className="shape shape__1" />
-            <img src="" alt={shapeTwo} className="shape shape__2" />
-            <img src="" alt={shapeTwo} className="shape shape__3" />
+            <img src={shapeOne} alt="" className="shape shape__1" />
+            <img src={shapeTwo}  alt="" className="shape shape__2" />
+            <img src={shapeTwo} alt="" className="shape shape__3" />
         </div>
 
         <p className="home__text">
@@ -47,7 +49,7 @@ const Home = () => {
         </div>
 
         <div className="home__btns">
-            <a href="" className="btn text-cs">Download CV</a>
+            <a download="" href={CV} className="btn text-cs">Download CV</a>
 
             <a href="" className="hero__link text-cs">My Skills</a>
         </div>

@@ -7,7 +7,7 @@
 :root {
     /* Colors */
 
-    --primary-color: hsl(165, 60%, 40%);
+    --primary-color: hsl(266, 100%, 61%);
     --title-color: hsl(0, 0%, 100%);
     --text-color: hsl(0, 0%, 92%);
     --bg-color: hsl(216, 18%, 16%);
@@ -60,6 +60,10 @@
 
 
 /*----------- Reset --------------*/
+
+html {
+    scroll-behavior: smooth;
+}
 
 * {
     margin: 0;
