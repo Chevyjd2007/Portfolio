@@ -11,6 +11,7 @@ import CV from "../../assets/Josias_Chevalier_Resume.pdf"
 
 const Home = () => {
   return <section className='home' id='home'>
+    <div className="home__wrapper">
     <div className="home__container container">
         <p className="home__subtitle text-cs">
             What's up, <span>My name Is</span>
@@ -19,7 +20,7 @@ const Home = () => {
         <h1 className="home__title text-cs"><span>Josias</span> Chevalier</h1>
 
         <p className="home__job">
-            <span className="text-cs">I have experience with</span> <b>Full Stack Development</b>
+            <span className="text-cs">I have experience with</span> <b>Fullstack Software Development</b>
         </p>
 
         <div className="home__img-wrapper">
@@ -33,7 +34,7 @@ const Home = () => {
         </div>
 
         <p className="home__text">
-            From Miami, Florida. I have a Bachelor of Arts in Computer Science from Florida International University.
+            Based in Miami, Florida. I have a Bachelor of Arts in Computer Science from Florida International University.
         </p>
 
         <div className="home__socials">
@@ -53,6 +54,7 @@ const Home = () => {
 
             <a href="" className="hero__link text-cs">My Skills</a>
         </div>
+    </div>
     </div>
   </section>;
     

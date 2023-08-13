@@ -1,9 +1,12 @@
 .home {
     background-image: var(--first-gradient);
+    padding-bottom: 180px;
+}
+
+.home__wrapper{
     display: grid;
     align-items: center;
     min-height: 100vh;
-
 }
 
 .home__container {
@@ -85,7 +88,6 @@
 }
 
 .home__banner {
-    background-color: var(--primary-color);
     padding-bottom: 100%;
     border-radius: 50%;
     position: relative;
@@ -119,5 +121,5 @@
 
 .shape__3 {
     bottom: 0;
-    right: 0;
+    right: 10%;
 }
