@@ -1,7 +1,7 @@
 import React from 'react'
 import ProfileImg from "../../assets/Chev.png"
 import zeldaFairies from "../../assets/zelda-fairies-1.png"
-import shapeOne from "../../assets/shape-1.png"
+import shapeOne from "../../assets/Jojo_Menace_1.png"
 import shapeTwo from "../../assets/shape-2.png"
 
 import { RxGithubLogo, RxLinkedinLogo } from "react-icons/rx";
