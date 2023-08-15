@@ -10,7 +10,8 @@ export const Projects = [
       category: 'Java and Spring',
       title: 'Smoothie-of-the-Day',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+        'This project shows a novel smoothies recipe daily while letting users add + rate recipes.',
+      link: 'http://www.smoothie-of-the-day.com/',
     },
     {
       id: 2,
@@ -18,7 +19,8 @@ export const Projects = [
       category: 'Javascript and React',
       title: 'Personal Portfolio',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+        'My personal react portfolio you are currently seeing.',
+      link: 'https://chevy.bio',
     },
     {
       id: 3,
@@ -26,6 +28,7 @@ export const Projects = [
       category: 'C# and .NET',
       title: 'Coming Soon',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.',
+        'Upcoming project in development',
+      link: 'https://github.com/Chevyjd2007',
     },
   ];

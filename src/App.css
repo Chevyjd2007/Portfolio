@@ -76,6 +76,10 @@ button, input, body {
     font-size: var(--normal-font-size);
 }
 
+body.no-scroll {
+    overflow: hidden;
+}
+
 body {
     color: var(--text-color);
     background-color: var(--bg-color);
@@ -167,10 +171,13 @@ img {
     opacity: 1;
 }
 
+.dar-theme .shape {
+    filter: invert(1);
+    opacity: .6;
+}
+
 .shape {
     position: absolute;
-    filter: invert(1);
-    opacity: 0.6;
 }
 
 .section {
@@ -229,4 +236,11 @@ img {
     color: var(--primary-color);
     margin-left: 20px;
     transition: all 0.3s var(--transition);
+}
+
+.c__shape {
+    right: -24px;
+    bottom: -24px;
+    width: 141px;
+    height: 141px;
 }
