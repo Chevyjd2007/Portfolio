@@ -19,13 +19,22 @@ export const Projects = [
       category: 'Javascript and React',
       title: 'Personal Portfolio',
       description:
-        'My personal react portfolio you are currently seeing.',
+        'My personal react portfolio you are currently viewing.',
       link: 'https://chevy.bio',
     },
     {
       id: 3,
       img: Project3,
       category: 'C# and .NET',
+      title: 'Coming Soon',
+      description:
+        'Upcoming project in development',
+      link: 'https://github.com/Chevyjd2007',
+    },
+    {
+      id: 4,
+      img: Project3,
+      category: 'Kotlin and Adnroid Studio',
       title: 'Coming Soon',
       description:
         'Upcoming project in development',

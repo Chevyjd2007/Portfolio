@@ -20,7 +20,7 @@ const Home = () => {
         <h1 className="home__title text-cs"><span>Josias</span> Chevalier</h1>
 
         <p className="home__job">
-            <span className="text-cs">I have experience with</span> <b>Software Development Life Cycle</b>
+            <span className="text-cs">I have experience with</span> <b>Software Development</b>
         </p>
 
         <div className="home__img-wrapper">
