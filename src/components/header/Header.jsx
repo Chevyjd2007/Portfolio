@@ -8,13 +8,22 @@ import { Link } from 'react-scroll';
 import { scrollToTop } from 'react-scroll/modules/mixins/animate-scroll';
 import { animateScroll } from 'react-scroll';
 
+// Stores user's specified theme
+const getStorageTheme = () => {
+    let theme = 'light-theme';
+    if (localStorage.getItem('theme')) {
+        theme = localStorage.getItem('theme');
+    }
+};
+
 const Header = () => {
 // This will be used to trigger the current state of showing the menu or not
 const [menu, setMenu] = useState(false);
 
 const [scroll, setScroll] = useState(false);
 
-const [theme, setTheme] = useState('light-theme');
+// The theme will be set based on the current value of theme in storage
+const [theme, setTheme] = useState(getStorageTheme());
 
 const scrollTop = () => {
     animateScroll.scrollToTop();
@@ -28,17 +37,26 @@ const changeNav = () => {
         }
     }
 
-useEffect(() => {
+    const toggleTheme = () => {
+        if (theme === 'light-theme') {
+            setTheme("dark-theme") 
+        } else {
+            setTheme("light-theme")
+        }
+    }
+
+    useEffect(() => {
         window.addEventListener('scroll', changeNav)
-    }, []);
+        }, []);
 
-useEffect(() => {
-    document.body.classList.toggle('no-scroll', menu);
-}, [menu]);
+    useEffect(() => {
+        document.body.classList.toggle('no-scroll', menu);
+    }, [menu]);
 
-useEffect(() => {
-    document.documentElement.className = theme;
-}, [theme])
+    useEffect(() => {
+        document.documentElement.className = theme;
+        localStorage.setItem('theme', theme);
+    }, [theme])
 
   return (
     <header className={`${scroll ? 'scroll-header' : ''} header`}>
@@ -73,8 +91,8 @@ useEffect(() => {
                </div>
             </div>
             <div className="nav__btns">
-                <div className="theme__toggle">
-                    <BsSun />
+                <div className="theme__toggle" onClick={toggleTheme}>
+                    {theme === "light-theme" ? <BsMoon /> : <BsSun/>}
                 </div>
                 <div className={`${menu ? 'nav__toggle animate-toggle' : 'nav__toggle'}`} onClick={() => setMenu(!menu)}>
                     <span></span>

@@ -1,8 +1,8 @@
 import React from 'react'
 import ProfileImg from "../../assets/Chev.png"
 import zeldaFairies from "../../assets/zelda-fairies-1.png"
-import shapeOne from "../../assets/Jojo_Menace_1.png"
-import shapeTwo from "../../assets/Jojo_Menace_1.png"
+import jojo1 from "../../assets/Jojo_Menace_1.png"
+import jojo2 from "../../assets/Jojo_Menace_1.png"
 
 import { RxGithubLogo, RxLinkedinLogo } from "react-icons/rx";
 import { BsDiscord } from "react-icons/bs";
@@ -28,9 +28,9 @@ const Home = () => {
                 <img src={ProfileImg} alt="" className='home__profile' />
             </div>
 
-            <img src={shapeOne} alt="" className="shape shape__1" />
-            <img src={shapeTwo}  alt="" className="shape shape__2" />
-            <img src={shapeTwo} alt="" className="shape shape__3" />
+            <img src={jojo1} alt="" className=" jojo__1" />
+            <img src={jojo2}  alt="" className=" jojo__2" />
+            <img src={jojo2} alt="" className=" jojo__3" />
         </div>
 
         <p className="home__text">

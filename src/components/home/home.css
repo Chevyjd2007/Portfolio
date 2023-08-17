@@ -34,6 +34,7 @@
 }
 
 .home__title {
+    color: #fff;
     font-size: var(--biggest-font-size);
     text-shadow: 2px 2px hsl(0, 0%, 0%), -2px 2px hsl(0, 0%, 0%), 2px -2px hsl(0, 0%, 0%), -2px -2px hsl(0, 0%, 0%), 5px 5px 0 rgb(0 0 0 / 20);
     line-height: 1.2;
@@ -102,24 +103,28 @@
     object-fit: cover;
 }
 
-.shape__1 {
+.jojo__1 {
     width: 226px;
     height: 226px;
     top: -6%;
     right: 6%;
 }
 
-.shape__2, .shape__3 {
+.jojo__2, .jojo__3 {
     width: 141px;
     height: 141px;
 }
 
-.shape__2 {
+.jojo__2 {
     bottom: 8%;
     left: -5%;
 }
 
-.shape__3 {
+.jojo__3 {
     bottom: 0;
     right: 10%;
+}
+
+.jojo__1, .jojo__2, .jojo__3 {
+    position: absolute;
 }

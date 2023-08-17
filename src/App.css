@@ -11,7 +11,7 @@
     --title-color: hsl(0, 0%, 100%);
     --text-color: hsl(0, 0%, 92%);
     --bg-color: hsl(216, 18%, 16%);
-    --bg-color-alt: hsl(213, 18%, 16%);
+    --bg-color-alt: hsl(213, 18%, 21%);
     --container-color: hsl(217, 18%, 14%);
     --border-color: hsl(210, 2%, 65%);
     --first-gradient: linear-gradient(
@@ -59,7 +59,7 @@
 }
 
 /*----------- Light THeme --------------*/
-.light-theeme {
+.light-theme {
     --primary-color: hsl(39, 86%, 67%);
     --title-color: #000;
     --text-color: #262626;
@@ -187,10 +187,11 @@ img {
     opacity: 1;
 }
 
-.dar-theme .shape {
+.dark-theme .shape {
     filter: invert(1);
     opacity: .6;
 }
+
 
 .shape {
     position: absolute;
