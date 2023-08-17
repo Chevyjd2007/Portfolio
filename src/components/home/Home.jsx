@@ -1,8 +1,8 @@
 import React from 'react'
 import ProfileImg from "../../assets/Chev.png"
-import zeldaFairies from "../../assets/zelda-fairies-1.png"
 import jojo1 from "../../assets/Jojo_Menace_1.png"
 import jojo2 from "../../assets/Jojo_Menace_1.png"
+import shape1 from "../../assets/shape-1.png"
 
 import { RxGithubLogo, RxLinkedinLogo } from "react-icons/rx";
 import { BsDiscord } from "react-icons/bs";
@@ -54,6 +54,10 @@ const Home = () => {
 
             <a href="" className="hero__link text-cs">My Skills</a>
         </div>
+    </div>
+
+    <div className="section__deco deco__left">
+        <img src={shape1} alt='' className='shape'/>
     </div>
     </div>
   </section>;

@@ -2,6 +2,7 @@ import React from 'react'
 import { History } from './History'
 import Card from './Card';
 import './resume.css'
+import shape1 from "../../assets/shape-1.png"
 
 const Resume = () => {
   return (
@@ -41,6 +42,10 @@ const Resume = () => {
                         })}
                     </div>
             </div>
+        </div>
+
+        <div className="section__deco deco__left">
+            <img src={shape1} alt='' className='shape'/>
         </div>
     </section>
   )

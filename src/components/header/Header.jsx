@@ -7,6 +7,7 @@ import "./header.css";
 import { Link } from 'react-scroll';
 import { scrollToTop } from 'react-scroll/modules/mixins/animate-scroll';
 import { animateScroll } from 'react-scroll';
+import shape1 from "../../assets/shape-1.png"
 
 // Stores user's specified theme
 const getStorageTheme = () => {
@@ -89,6 +90,9 @@ const changeNav = () => {
                     </a>
                 </div>
                </div>
+               <div className="section__deco deco__left header__deco">
+                    <img src={shape1} alt='' className='shape'/>
+                </div>
             </div>
             <div className="nav__btns">
                 <div className="theme__toggle" onClick={toggleTheme}>
@@ -100,6 +104,7 @@ const changeNav = () => {
                 </div>
             </div>
         </nav>
+        
     </header>
   )
 }
