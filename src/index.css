@@ -35,4 +35,10 @@
     .container {
         max-width: 960px;
     }
+
+    .home__img-wrapper {
+        position: relative;
+        transform: initial;
+        right: initial;
+    }
 }

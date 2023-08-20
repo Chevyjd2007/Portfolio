@@ -10,4 +10,7 @@ export const Links = [
 
     {name: 'Resume',
     path: 'resume',},
+
+    {name: 'Contact',
+    path: 'contact',},
 ]
