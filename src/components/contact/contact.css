@@ -26,12 +26,11 @@
 .text-area-message {
     width: 750px;
     height: 100px;
-   
 }
 
 .contact__form-tag {
     margin-left: 30px;
-    font-size: var(--smaller-font-size);
+    font-size: var(--large-font-size);
     line-height: 1.7;
     font-weight: 700;
 }
@@ -67,6 +66,8 @@
     background-color: var(--container-color) !important;
     border-color: 2px solid var(--border-color) !important;
     color: var(--text-color) !important;
-    line-height: 3.0rem !important;
+    line-height: 4.0rem !important;
     --Textarea-paddingBlock: 0 !important;
+    --Textarea-minHeight: 4rem !important;
+    --Textarea-focusedHighlight: var(--primary-color) !important;
   }
