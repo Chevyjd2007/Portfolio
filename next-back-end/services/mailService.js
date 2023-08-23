@@ -3,8 +3,8 @@ const aws = require('aws-sdk');
 
 // Set up AWS SES configuration
 aws.config.update({
-    accessKeyId: 'AKIAZWSKCFF4S73QBL5T',
-    secretAccessKey: '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',
+    accessKeyId: '',
+    secretAccessKey: '',
     region: 'US East'  // or whatever region you're using
   });
 
