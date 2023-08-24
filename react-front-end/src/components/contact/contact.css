@@ -1,0 +1,84 @@
+.contact {
+    background-image: var(--third-gradient);
+}
+
+.contact__container {
+    grid-template-columns: 1fr 2fr;
+}
+
+.contact__form-group {
+    
+    column-gap: 30px;
+    padding-left: 250px;
+}
+
+.contact__form-div {
+    display: grid;
+    row-gap: 10px;
+    margin-bottom: 30px;
+}
+
+.text-area {
+    width: 350px;
+    height: 40px;
+}
+
+.text-area-message {
+    width: 750px;
+    height: 100px;
+}
+
+.contact__form-tag {
+    margin-left: 30px;
+    font-size: var(--large-font-size);
+    line-height: 1.7;
+    font-weight: 700;
+}
+
+.contact__form-tag b {
+    color: var(--primary-color);
+}
+
+.contact__form-area {
+    padding-block: 20px;
+    resize: none;
+    height: 140px;
+}
+
+.contact__submit {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 30px;
+}
+
+.name__email__container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 30px;
+}
+
+.subject-area {
+    width: 750px;
+}
+
+.css-13f8m4g-JoyTextarea-root {
+    background-color: var(--container-color) !important;
+    border-color: 2px solid var(--border-color) !important;
+    color: var(--text-color) !important;
+    line-height: 4.0rem !important;
+    --Textarea-paddingBlock: 0 !important;
+    --Textarea-minHeight: 4rem !important;
+    --Textarea-focusedHighlight: var(--primary-color) !important;
+  }
+
+  .css-wlnc1n {
+    background-color: var(--container-color) !important;
+    border-color: 2px solid var(--border-color) !important;
+    color: var(--text-color) !important;
+    line-height: 4.0rem !important;
+    --Textarea-paddingBlock: 0 !important;
+    --Textarea-minHeight: 4rem !important;
+    --Textarea-focusedHighlight: var(--primary-color) !important;
+
+  }
