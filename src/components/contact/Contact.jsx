@@ -24,10 +24,13 @@ const Contact = () => {
     }
 
     // function responsible for submitting email
-    const handleSubmit = () => [
-        
-
-    ]
+    const handleSubmit = () => {
+        const contact = {name, email, subject, message};
+        console.log("Submiting ",  email)
+        axios.post("http://localhost:3000/api/contactMe", contact)
+        .then(response => {console.log(response)})
+        .catch(error => console.error(error));
+}
 
   return (
    <section className="contact section" id="contact">
@@ -40,28 +43,28 @@ const Contact = () => {
                 <div className="name__email__container">
                     <div className="contact__form-div">
                         <label className="contact__form-tag text-cs">Your full name <b>*</b></label>
-                        <Textarea className='text-area' size='lg' name='name' placeholder='to-be-implemented' 
+                        <Textarea className='text-area' size='lg' name='name' placeholder='name' 
                         value={name} onChange={e => setName(e.target.value)}/>
                     </div>
                     <div className="contact__form-div">
                         <label className="contact__form-tag text-cs">Your email <b>*</b></label>
-                        <Textarea className='text-area' size='lg' name='email' placeholder='to-be-implemented' 
+                        <Textarea className='text-area' size='lg' name='email' placeholder='name' 
                         value={email} onChange={e => setEmail(e.target.value)}/>
                     </div>
                 </div>
                 <div className="contact__form-div">
                     <label className="contact__form-tag text-cs">Your subject <b>*</b></label>
-                    <Textarea size='lg' className='text-area subject-area' name='subject' placeholder='to-be-implemented' 
+                    <Textarea size='lg' className='text-area subject-area' name='subject' placeholder='subject' 
                     value={subject} onChange={e => setSubject(e.target.value)}/>
                 </div>
                 <div className="contact__form-div contact__form-area">
                     <label className="contact__form-tag text-cs">Your message <b>*</b></label>
-                    <Textarea size='lg' className='text-area-message' name='message' placeholder='to-be-implemented'   
+                    <Textarea size='lg' className='text-area-message' name='message' placeholder='message'   
                     value={message} onChange={e => setMessage(e.target.value)}/>
                 </div>
 
                 <div className="contact__submit">
-                    <button className="btn text-cs" onClick={validateForm}>Send Message</button>
+                    <button className="btn text-cs" onClick={handleSubmit}>Send Message</button>
                 </div>
             </div>   
             
