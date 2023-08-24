@@ -37,7 +37,7 @@ const Contact = () => {
         const contact = {name, email, subject, message};
         if (validateForm()) {
         console.log("Submiting ",  email)
-        axios.post("Node-mailer-server-env.eba-idhskw3a.us-east-2.elasticbeanstalk.com/api/contactMe", contact)
+        axios.post("https://node-server-nodemailer.vercel.app/api/contactMe", contact)
         .then(response => {console.log(response)
 
         if (response.data.response === "Email has been sent!") {
