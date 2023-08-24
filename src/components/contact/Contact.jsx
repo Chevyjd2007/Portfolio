@@ -3,8 +3,14 @@ import Textarea from '@mui/joy/Textarea';
 import "./contact.css"
 import shape1 from "../../assets/shape-1.png"
 import axios from 'axios';
+import Snackbar from '@mui/material/Snackbar';
+import Alert from '@mui/material/Alert';
 
 const Contact = () => {
+    //Variables for the snackbar
+    const [open, setOpen] = useState(false);
+    const [success, setSuccess] = useState(false);
+
     // Variables to be submitted to send email
     const [name, setName] = useState("");
     const [email, setEmail] = useState('');
@@ -23,14 +29,35 @@ const Contact = () => {
         return Object.keys(tempErrors).length === 0;
     }
 
-    // function responsible for submitting email
+    // function responsible for submitting email. Also handling submission errors.
     const handleSubmit = () => {
         const contact = {name, email, subject, message};
         console.log("Submiting ",  email)
         axios.post("http://localhost:3000/api/contactMe", contact)
-        .then(response => {console.log(response)})
-        .catch(error => console.error(error));
+        .then(response => {console.log(response)
+
+        if (response.data.response === "Email has been sent!") {
+            setOpen(true);
+            setSuccess(true);
+        } else {
+            setOpen(true);
+            setSuccess(false);
+        }
+        })
+
+        .catch(error => { console.error(error)
+            setOpen(true);
+            setSuccess(false);
+            });
 }
+//Function to handle closing the snackbar
+    const handleClose = (event, reason) => {
+        if (reason === 'clickaway') {
+        return;
+        }
+
+        setOpen(false);
+    };
 
   return (
    <section className="contact section" id="contact">
@@ -65,6 +92,11 @@ const Contact = () => {
 
                 <div className="contact__submit">
                     <button className="btn text-cs" onClick={handleSubmit}>Send Message</button>
+                    <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+                        <Alert severity={success ? 'success' : 'error'} sx={{width: '100%'}} onClose={handleClose}>
+                        {success ? 'Your email has been sent!' : 'Error! Email could not be sent.'}
+                        </Alert>
+                    </Snackbar>
                 </div>
             </div>   
             
