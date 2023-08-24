@@ -9,9 +9,9 @@ class EmailService {
     // AWS SES configurations + nodemailer transporter configs
     constructor() {
         AWS.config.update({
-            accessKeyId: '',
-            secretAccessKey: '',
-            region: 'us-east-2'
+            accessKeyId: process.env.AWS_SES_ACCESS_KEY_ID,
+            secretAccessKey: process.env.AWS_SES_SECRET_ACCESS_KEY,
+            region: process.env.AWS_SES_REGION
         });
 
         this.transporter = nodemailer.createTransport({
@@ -22,11 +22,11 @@ class EmailService {
     }
 
     // Method responsible for sending emails
-    async sendEmail(subject, recipient, text) {
+    async sendEmail(subject, name, recipientEmail, text) {
         const mailOptions = {
             from: 'chevyjd2007@gmail.com', 
             to: 'chevyjd2007@gmail.com',
-            subject: "Subject: " + subject + " | From: " + recipient,
+            subject: "Subject: " + subject + " | From: " + name + ", " + recipientEmail,
             text,
         };
 
