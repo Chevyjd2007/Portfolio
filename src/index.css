@@ -124,3 +124,162 @@
         margin-left: -120px;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 24px 12px;
+    }
+
+    .nav__data {
+        padding: 80px 0 0 124px;
+    }
+
+    .show-menu {
+        width: 420px;
+    }
+
+    .header__deco {
+        left: 60px;
+    }
+
+    .container {
+        max-width: 540px;
+    }
+
+    .home__img-wrapper {
+        margin-top: 120px;
+        max-width: 400px;
+    }
+
+    .jojo__2, .jojo__3 {
+        width: 72px;
+        height: 72px;
+    }
+
+    .jojo__1 {
+        width: 115px;
+        height: 115px;
+        right: 9%;
+    }
+
+    .jojo__2 {
+        bottom: 10%;
+        left: 5%;
+    }
+
+    .jojo__3 {
+        bottom: 10%;
+        right: 10%;
+    }
+
+    .portfolio__container {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio__list {
+        column-gap: 24px;
+    }
+
+    .portfolio__list::before {
+        bottom: -8px;
+    }
+
+    .contact__form-group {
+        padding-left: 150px;
+    }
+
+    .name__email__container {
+        grid-template-columns: 1fr;
+    }
+
+    .subject-area {
+        width: 500px;
+    }
+
+    .text-area-message {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .show-menu {
+        width: 100%;
+    }
+
+    .nav__btns {
+        column-gap: 24px;
+    }
+
+    .home__img-wrapper {
+        margin-top: 100px;
+    }
+
+    .resume__header {
+        padding: 28px 24px;
+    }
+
+    .resume__content {
+        padding-inline: 24px 30px;
+    }
+
+    .resume__date-title {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 4px;
+    }
+
+    .contact__form-group {
+        padding-left: 120px;
+    }
+
+    .subject-area {
+        width: 350px;
+    }
+
+    .text-area-message {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 391px) {
+
+    .nav__data {
+        padding: 80px 0 0 90px;
+    }
+
+    .header__deco {
+        left: 40px;
+    }
+
+    .home__img-wrapper {
+        margin-top: 80px;
+    }
+
+    .card-one, .card-two {
+        padding: 24px;
+    }
+
+    .portfolio__img {
+        height: 180px;
+    }
+
+    .resume__header {
+        padding: 24px 18px;
+    }
+
+    .resume__content {
+        padding-inline: 18px 20px;
+    }
+
+    .text-area-message {
+        width: 290px;
+    }
+
+    .subject-area {
+        width: 290px;
+    }
+
+    .text-area {
+        width: 290px;
+    }
+}
