@@ -239,6 +239,10 @@
     .text-area-message {
         width: 350px;
     }
+
+    .resume__icon {
+        right: -5px;
+    }
 }
 
 @media screen and (max-width: 391px) {
@@ -272,6 +276,21 @@
     }
 
     .text-area-message {
+        width: 330px;
+    }
+
+    .subject-area {
+        width: 330px;
+    }
+
+    .text-area {
+        width: 330px;
+    }
+}
+
+
+@media screen and (max-width: 364px) {
+    .text-area-message {
         width: 290px;
     }
 
@@ -282,4 +301,6 @@
     .text-area {
         width: 290px;
     }
+
 }
+
