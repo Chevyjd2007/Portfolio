@@ -34,7 +34,7 @@ const Home = () => {
         </div>
 
         <p className="home__text">
-            Based in Miami, Florida. I have a Bachelor of Arts in Computer Science from Florida International University.
+            Based in Miami, Florida. I have a Bachelor in Computer Science from Florida International University.
         </p>
 
         <div className="home__socials">

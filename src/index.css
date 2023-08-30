@@ -40,5 +40,87 @@
         position: relative;
         transform: initial;
         right: initial;
+        margin-inline: auto;
+        margin-top: 140px;
+    }
+
+    .home {
+        padding-top: 140px;
+    }
+
+    .home__subtitle, .home__title, .home__job, .home__text {
+        text-align: center;
+    }
+
+    .home__text {
+        margin-inline: auto;
+    }
+
+    .home__socials, .home__btns {
+        justify-content: center;
+    }
+
+    .portfolio__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact__form-group {
+        padding-left: 100px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    :root {
+        --h2-font-size: 24px;
+        --h3-font-size: 23px;
+        --h4-font-size: 21px;
+        --h5-font-size: 20px;
+        --largest-font-size: 19px;
+        --larger-font-size: 18px;
+        --large-font-size: 16px;
+        --normal-font-size: 15px;
+        --small-font-size: 14px;
+        --smaller-font-size: 13px;
+        --tiny-font-size: 12px;
+    }
+
+    .container {
+        max-width: 740px;
+    }
+
+    .home__btns {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 60px;
+    }
+
+    .hero__link::before {
+        left: 50%;
+        top: -72%;
+        transform: translateX(-50%);
+        width: 2px;
+        height: 40px;
+    }
+
+    .portfolio__container {
+        gap: 30px;
+    }
+
+    .resume__container {
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+    }
+
+    .resume__icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .portfolio__img {
+        height: 200px;
+    }
+
+    .contact__form-group {
+        margin-left: -120px;
     }
 }
