@@ -1,6 +1,7 @@
 import Project1 from '../../assets/project1.png';
 import Project2 from '../../assets/project2.png';
-import Project3 from '../../assets/project3.png';
+import comingSoon from '../../assets/project3.png';
+import Project3 from "../../assets/project-3.png"
 
 
 export const Projects = [
@@ -25,16 +26,16 @@ export const Projects = [
     {
       id: 3,
       img: Project3,
-      category: 'C# and .NET',
-      title: 'Coming Soon',
+      category: 'React Native and Django',
+      title: 'To-The-Moon',
       description:
-        'Upcoming project in development',
-      link: 'https://github.com/Chevyjd2007',
+        'Real time stock exchange simulator for tracking your financial portfolio.',
+      link: 'https://github.com/Chevyjd2007/To-The-Mooon',
     },
     {
       id: 4,
-      img: Project3,
-      category: 'Kotlin and Adnroid Studio',
+      img: comingSoon,
+      category: 'C# and .NET',
       title: 'Coming Soon',
       description:
         'Upcoming project in development',
