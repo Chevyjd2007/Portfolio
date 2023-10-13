@@ -289,6 +289,9 @@ img {
     left: 3%;
 }
 
+
+
+
 .section__deco::before, .section__deco::after {
     content: '';
     position: absolute;
@@ -299,7 +302,11 @@ img {
     background-color: var(--bg-color);
     border: 2px solid var(--border-color);
     box-shadow: var(--shadow);
+}
 
+.section__deco:hover::before, .section__deco:hover:after{
+    background-color: var(--primary-color);
+    transition: all 0.3s var(--transition);
 }
 
 .section__deco::before {
