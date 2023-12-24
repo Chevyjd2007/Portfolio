@@ -44,7 +44,7 @@ const Home = () => {
             <a href="https://www.linkedin.com/in/josias-chevalier-10882964/" className="home__social-link">
                 <RxLinkedinLogo/>
             </a>
-            <a href="https://discordapp.com/users/che.vy" className="home__social-link">
+            <a href="" className="home__social-link">
                 <BsDiscord/>
             </a>
         </div>
